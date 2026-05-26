@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        #box{
+            border: 5px solid black;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin: 10px; */
+            background-color: rgb(255, 0, 0);
+        }
+        #box2{
+            border: 5px solid black;
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 255, 0);
+            transition: transform 0.5s;
+        }
+        #box3{
+            border: 5px solid black;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            background-color: rgb(0, 0, 255);
+            transition: transform 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #box:hover #box2 {
+    transform: translatex(220px) scale(1.33);
+    /* transform-origin: top center; */
+}
+#box:hover #box3 {
+    transform: translatex(170px) scale(1.5);
+    /* transform-origin: top center; */
+}
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="box2">
+            <div id="box3">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
