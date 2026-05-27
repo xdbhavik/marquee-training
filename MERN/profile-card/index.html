@@ -8,8 +8,8 @@
 
         #card{
             border: 5px solid black;
-            height: 60vh;
-            width: 45vw;
+            height: 600px;
+            width: 400px;
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -21,26 +21,32 @@
             border-radius: 50%;
             height: 200px;
             width: 200px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
             border: 2px solid black;
         }
 
         #name{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 50px;
+            font-size: 40px;
         }
-
+        #pfp{
+            background-image: url(dictator.webp);
+        }
         #des{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: ;
+            
         }
+
     </style>
 </head>
 <body>
     <div id="card">
-        <h2 id="name">Oggy</h2>
-        <div></div>
-        <p id="des">Bug-solver</p>
-        <p>Specializes in handling cockroaches.</p>
+        <h2 id="name">Alison Burgers</h2>
+        <div id="pfp"></div>
+        <p id="des">The Dictator</p>
+        <p>Specializes in...DICTATORSHIPS</p>
         <button>Follow</button>
     </div>
 </body>
