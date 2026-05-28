@@ -1,0 +1,174 @@
+/* fonts  */
+@font-face {
+    font-family: "flipkart-font";
+    src: url("./fonts/Riona\ Sans\ W01\ Bold\ Italic.ttf") format("truetype");
+}
+
+
+
+
+
+*{
+    margin: 8px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.logo{
+    background-color: #ffe51f;
+    display: inline-block;
+    font-size: 20px;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-style: italic;
+    font-family: "flipkart-font", sans-serif;
+    
+}
+
+.travel {
+        background-color:#f0f0f0;
+    display: inline-block;
+    font-size: 20px;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-style: italic;
+    font-family: "flipkart-font", sans-serif;
+}
+.loc{
+    display: inline-block;
+    font-size: 15px;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 1150px;
+}
+
+#searchbar{
+    width: 89%;
+    display: inline-block;
+    border-color: #2ea1ff;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.box{
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 45px;
+    padding-top: 55px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.all{
+    background-image: url("./icons/all.svg");
+}
+
+.fashion{
+    background-image: url("./icons/fashion.svg");
+}
+
+.mobiles{
+    background-image: url("./icons/mobiles.svg");
+}
+
+.beauty{
+    background-image: url("./icons/beauty.svg");
+}
+
+.electronics{
+    background-image: url("./icons/electronics.svg");
+}
+
+.home{
+    background-image: url("./icons/home-final.svg");
+}
+
+.tv{
+    background-image: url("./icons/tv.svg");
+}
+
+.toy{
+    background-image: url("./icons/toy.svg");
+}
+
+.food{
+    background-image: url("./icons/food.svg");
+}
+
+.autoacc{
+    background-image: url("./icons/auto-acc.svg");
+}
+
+.auto{
+    background-image: url("./icons/auto-new.svg");
+}
+
+.sport{
+    background-image: url("./icons/sport.svg");
+}
+
+.books{
+    background-image: url("./icons/books.svg");
+}
+
+.furniture{
+    background-image: url("./icons/furniture.svg");
+}
+
+.bottom{
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+#hero img{
+    width: 550px;
+    height:250px;
+    object-fit: cover;
+}
+
+#hero div{
+    display: inline-block;
+}
+
+#recom div{
+    display: inline-block;
+}
+
+#recom{
+    background-color: green;
+    border-radius: 20px;
+    padding-top: 20px;
+    /* padding-left: 30px; */
+}
+
+#recom h2{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+#recom img{
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.footcards{
+    display: inline-block;
+}
+.footcards div{
+    
+}
+
+
