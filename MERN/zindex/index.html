@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #parent{
+            /* position: relative; */
+        }
+        #parent div{
+            display: inline-block;
+            position: absolute;
+            /* position: relative; */
+
+        }
+
+        #b1{
+            background-color: red;
+            
+            
+
+            height: 200px;
+            width: 200px;
+
+            z-index: 0;
+        }
+        #b2{
+            background-color: blue;
+            z-index: 1;
+            margin: 30px;
+            height: 200px;
+            width: 200px;
+        }
+        #b3{
+            background-color: green;
+            height: 200px;
+            width: 200px;
+            margin: 60px;
+            z-index: 2;
+
+        }
+        #b4{
+            background-color: darkmagenta;
+            height: 200px;
+            width: 200px;
+            margin: 90px;
+            z-index: 3;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+    <div id="b1"></div>
+    <div id="b2"></div>
+    <div id="b3"></div>
+    <div id="b4"></div>
+    </div>
+</body>
+</html>

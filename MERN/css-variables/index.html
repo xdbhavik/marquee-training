@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables in CSS</title>
+    <style>
+      :root {
+        --primary-bg: gray;
+        --bgc1: purple;
+        --bgc2: yellow;
+        --bgc3: green;
+        --parent-color: orange;
+
+        --font: Roboto, sans-serif;
+      }
+
+      body {
+        background-color: var(--primary-bg);
+      }
+      #b1 {
+        background-color: var(--bgc1);
+      }
+      #b2 {
+        background-color: var(--bgc2);
+      }
+
+      #b3 {
+        background-color: var(--bgc3);
+      }
+      #parent div,
+      parent h1 {
+        display: inline-block;
+        margin: 10px;
+      }
+      #parent, #parent div{
+        border: 3px solid black;
+        border-radius: 10px;
+      }
+      #parent {
+        background-color: var(--parent-color);
+        height: 800px;
+        width: 500px;
+        
+        box-shadow: 5px 5px 3px white;
+        margin-left: 35%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <h1>Heading</h1>
+      <div id="b1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+        voluptatum itaque delectus sint praesentium cupiditate soluta
+        perferendis laborum iste error unde voluptatem hic, quaerat iure fugiat
+        blanditiis! Facilis, repellat possimus!
+      </div>
+      <div id="b2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus vero
+        pariatur tenetur adipisci. Animi sed ratione tempora corrupti id
+        consequuntur, natus ab harum quisquam, facere optio vero incidunt
+        eligendi dolor!
+      </div>
+      <div id="b3">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
+        quisquam voluptatibus esse quae doloremque, nemo autem, voluptatum id
+        ducimus mollitia sunt pariatur voluptas possimus dolorem nihil est
+        dolore nostrum? Distinctio.
+      </div>
+    </div>
+  </body>
+</html>
