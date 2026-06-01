@@ -4,20 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Variables in CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S+Guides:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Playwrite+GB+S+Guides:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
     <style>
       :root {
         --primary-bg: gray;
         --bgc1: purple;
         --bgc2: yellow;
         --bgc3: green;
-        --parent-color: orange;
 
-        --font: Roboto, sans-serif;
+        --cursive: "Playwrite GB S Guides", cursive;
+        --parafont: "Playfair Display", serif;
+
+        --border-d: 3px solid black;
+        --shadow-white: 5px 5px 3px brown;
+      }
+      .playfair-display {
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .playwrite-gb-s-guides-regular {
+        font-family: "Playwrite GB S Guides", cursive;
+        font-weight: 400;
+        font-style: normal;
       }
 
-      body {
-        background-color: var(--primary-bg);
+      .playwrite-gb-s-guides-regular-italic {
+        font-family: "Playwrite GB S Guides", cursive;
+        font-weight: 400;
+        font-style: italic;
       }
+
       #b1 {
         background-color: var(--bgc1);
       }
@@ -33,16 +61,28 @@
         display: inline-block;
         margin: 10px;
       }
-      #parent, #parent div{
-        border: 3px solid black;
+      h1 {
+        font-family: var(--cursive);
+        color: white;
+
+        margin-left: 35%;
+      }
+      #parent,
+      #parent div {
+        border: var(--border-d);
         border-radius: 10px;
       }
+
+      #parent div {
+        font-family: var(--parafont);
+        font-size: 20px;
+      }
       #parent {
-        background-color: var(--parent-color);
+        background-color: var(--primary-bg);
         height: 800px;
         width: 500px;
-        
-        box-shadow: 5px 5px 3px white;
+
+        box-shadow: var(--shadow-white);
         margin-left: 35%;
       }
     </style>
