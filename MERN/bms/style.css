@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+#parent{
+    /* background-color: #d4d5d4; */
+}
+
+#header{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+#top{
+    width: 100vw;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0 56px;
+    background-color: white;
+    /* border: 2px solid red; */
+    
+}
+
+#nav{
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 56px;
+    background-color: whitesmoke;
+}
+
+#name{
+    width: 130px;
+    height: 38px;
+    flex-shrink: 0;
+    background-image: url(assets/Gemini_Generated_Image_ekpkzcekpkzcekpk.png);
+        
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    
+}
+
+#searchbar{
+    flex: 1;
+    
+}
+#searchbar input{
+
+    
+    width: 100%;
+    max-width: 560px;
+    height: 38px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 0 14px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+#topbuttons{
+    width: 280px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+}
+
+#pfp{
+    background-image: url('assets/pfp.svg');
+    height: 40px;
+    width: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#burgermenu{
+    background-image: url('assets/burger.svg');
+
+        height: 40px;
+    width: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+#leftnav{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    
+}
+#rightnav{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-items{
+    color: #222222;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+#hero{
+    background-image: url(assets/Gemini_Generated_Image_u22yvju22yvju22y.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 16px;
+    overflow: hidden;
+    
+    height: 297px;
+    width: 1240px;
+    max-width: 80vw;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+#recom{
+    width: 80vw;
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#rectext{
+    margin-bottom: 12px;
+}
+
+#rectext p{
+    color: #333333;
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+#poster-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.movie-card{
+    width: 222px;
+    font-family: Arial, sans-serif;
+}
+
+.posters{
+    background-image: url(assets/poster.jpg);
+    height: 378px;
+    width: 222px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    border-radius: 8px;
+    overflow: hidden;
+    
+}
+
+.movie-card h3{
+    margin-top: 12px;
+    color: #222222;
+    font-size: 18px;
+}
+
+.movie-card p{
+    margin-top: 8px;
+    color: #666666;
+    font-size: 16px;
+}
