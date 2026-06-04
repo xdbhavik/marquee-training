@@ -1,75 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bookmyshow</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="parent">
-        <div id="header">
-            <div id="top">
-                <div id="name"></div>
-                <div id="searchbar"><input type="text" placeholder="Search"></div>
-                <div id="topbuttons">
-                    <div id="loc">Nanded</div>
-                    <div id="pfp"></div>
-                    <div id="burgermenu"></div>
-                </div>
+      <div id="header">
+        <div id="top">
+          <div id="name"></div>
+          <div id="searchbar"><input type="text" placeholder="Search" /></div>
+          <div id="topbuttons">
+            <div id="loc">Nanded</div>
+            <div id="pfp"></div>
+            <div id="burgermenu"></div>
+          </div>
+        </div>
+        <div id="nav">
+          <div id="leftnav">
+            <div class="nav-items">Movies</div>
+            <div class="nav-items">Stream</div>
+            <div class="nav-items">Events</div>
+            <div class="nav-items">Plays</div>
+            <div class="nav-items">Sports</div>
+            <div class="nav-items">Activities</div>
+          </div>
+          <div id="rightnav">
+            <div class="nav-items">ListYourShow</div>
+            <div class="nav-items">Corporates</div>
+            <div class="nav-items">Offers</div>
+            <div class="nav-items">Gift Cards</div>
+          </div>
+        </div>
+      </div>
 
+      <div id="content">
+        <div id="hero"></div>
+        <div id="recom">
+          <div class="content_text"><p>Recommended Movies</p></div>
+          <div id="poster-row">
+            <div class="movie-card">
+              <div class="posters"></div>
+              <h3>7 Crore</h3>
+              <p>Comedy/Romantic</p>
             </div>
-            <div id="nav">
-                <div id="leftnav">
-                    <div class="nav-items">Movies</div>
-                    <div class="nav-items">Stream</div>
-                    <div class="nav-items">Events</div>
-                    <div class="nav-items">Plays</div>
-                    <div class="nav-items">Sports</div>
-                    <div class="nav-items">Activities</div>
-                </div>
-                <div id="rightnav">
-                    <div class="nav-items">ListYourShow</div>
-                    <div class="nav-items">Corporates</div>
-                    <div class="nav-items">Offers</div>
-                    <div class="nav-items">Gift Cards</div>
-                </div>
+            <div class="movie-card">
+              <div class="posters"></div>
+              <h3>7 Crore</h3>
+              <p>Comedy/Drama</p>
             </div>
+            <div class="movie-card">
+              <div class="posters"></div>
+              <h3>7 Crore</h3>
+              <p>Action/Drama/Historical</p>
+            </div>
+            <div class="movie-card">
+              <div class="posters"></div>
+              <h3>7 Crore</h3>
+              <p>Drama/Musical/Romantic</p>
+            </div>
+            <div class="movie-card">
+              <div class="posters"></div>
+              7 Crore
+              <h3>7 Crore</h3>
+              <p>Action/Thriller</p>
+            </div>
+          </div>
+        </div>
+        <div class="flatbanner"></div>
+        <div id="live">
+          <div class="content_text">
+            <p>The Best of Live Events</p>
+          </div>
+          <div id="live_row">
+            <div class="live-posters">
+              <img
+                src="assets/comedy-shows-collection-202211140440.avif"
+                alt="comedy"
+              />
+            </div>
+            <div class="live-posters">
+              <img
+                src="assets/amusement-parks-banner-desktop-collection-202503251132.avif"
+                alt="amusement"
+              />
+            </div>
+            <div class="live-posters">
+              <img
+                src="assets/music-shows-collection-202211140440.avif"
+                alt="music"
+              />
+            </div>
+            <div class="live-posters">
+              <img
+                src="assets/kids-banner-desktop-collection-202503251132.avif"
+                alt="kids"
+              />
+            </div>
+            <div class="live-posters">
+              <img
+                src="assets/theatre-shows-collection-202211140440.avif"
+                alt="theatre"
+              />
+            </div>
+          </div>
         </div>
 
-        <div id="content">
-            <div id="hero"></div>
-            <div id="recom">
-                <div id="rectext"><p>Recommended Movies</p></div>
-                <div id="poster-row">
-                    <div class="movie-card">
-                        <div class="posters"></div>
-                        <h3>7 Crore</h3>
-                        <p>Comedy/Romantic</p>
-                    </div>
-                    <div class="movie-card">
-                        <div class="posters"></div>
-                        <h3>7 Crore</h3>
-                        <p>Comedy/Drama</p>
-                    </div>
-                    <div class="movie-card">
-                        <div class="posters"></div>
-                        <h3>7 Crore</h3>
-                        <p>Action/Drama/Historical</p>
-                    </div>
-                    <div class="movie-card">
-                        <div class="posters"></div>
-                        <h3>7 Crore</h3>
-                        <p>Drama/Musical/Romantic</p>
-                    </div>
-                    <div class="movie-card">
-                        <div class="posters"></div>7 Crore
-                        <h3>7 Crore</h3>
-                        <p>Action/Thriller</p>
-                    </div>
-                </div>
+        <div class="premiere-bg">
+          <div class="premiere">
+            <div id="premiere-head"></div>
+            <div class="premiere-title">
+              <h2>Premieres</h2>
+              <p>Brand new releases every Friday</p>
             </div>
+            <div id="premiere-row">
+              <div class="movie-card premiere-card">
+                <div class="posters premiere-poster1"></div>
+                <h3>Lee Cronin's The Mummy (Preview)</h3>
+                <p>English</p>
+              </div>
+              <div class="movie-card premiere-card">
+                <div class="posters premiere-poster2"></div>
+                <h3>Lee Cronin's The Mummy</h3>
+                <p>English</p>
+              </div>
+              <div class="movie-card premiere-card">
+                <div class="posters premiere-poster3"></div>
+                <h3>Missterious</h3>
+                <p>Telugu</p>
+              </div>
+              <div class="movie-card premiere-card">
+                <div class="posters premiere-poster4"></div>
+                <h3>Die Drei??? Toteninsel</h3>
+                <p>German</p>
+              </div>
+              <div class="movie-card premiere-card">
+                <div class="posters premiere-poster5"></div>
+                <h3>Dark Face</h3>
+                <p>Tamil</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
