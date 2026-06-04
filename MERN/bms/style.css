@@ -6,6 +6,8 @@
 
 #parent{
     /* background-color: #d4d5d4; */
+
+
 }
 
 #header{
@@ -17,7 +19,8 @@
 }
 
 #top{
-    width: 100vw;
+    width: 1240px;
+    max-width: 80vw;
     height: 64px;
     display: flex;
     justify-content: space-between;
@@ -30,7 +33,8 @@
 }
 
 #nav{
-    width: 100vw;
+    width: 1240px;
+    max-width: 80vw;
     height: 40px;
     display: flex;
     justify-content: space-between;
