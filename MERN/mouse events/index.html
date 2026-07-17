@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(35, 44, 44);
+    color: white;
+}
+
+#box{
+    border: 2px solid black;
+    height: 70vh;
+    width: 70vw;
+
+}
+
+#controls{
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+}
+
+button{
+    padding: 10px;
+    font-size: 16px;
+    background-color: coral;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+
+
+
+</style></head>
+<body>
+    <div id="box">
+        <div id="controls">
+            <button id="clear">Clear Board</button>
+            <p><strong>Tip:</strong>Right click to change brush color | Double click to change background color</p>
+        </div>
+
+        <canvas id="board" width="800px" height="800px"></canvas>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
