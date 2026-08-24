@@ -1,0 +1,2 @@
+Mouse props:
+    client, page, screen, offset

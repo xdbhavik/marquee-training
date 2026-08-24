@@ -1,0 +1,213 @@
+@import url(https://db.onlinewebfonts.com/c/226f58ab113a6d821def90a7d6dc2427?family=GT+Pressura+Mono+Regular+Regular);
+@import url(https://db.onlinewebfonts.com/c/198bf5583f9f075a77b457c54a24b02b?family=GT+Pressura+Mono+Light+Light);
+@font-face {
+    font-family: "GT Pressura Mono Light Light";
+    src: url("https://db.onlinewebfonts.com/t/198bf5583f9f075a77b457c54a24b02b.eot");
+    src: url("https://db.onlinewebfonts.com/t/198bf5583f9f075a77b457c54a24b02b.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/198bf5583f9f075a77b457c54a24b02b.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/198bf5583f9f075a77b457c54a24b02b.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/198bf5583f9f075a77b457c54a24b02b.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/198bf5583f9f075a77b457c54a24b02b.svg#GT Pressura Mono Light Light")format("svg");
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "GT Pressura Mono Regular Regular";
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 21px;
+    letter-spacing: 0.1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px 40px;
+    z-index: 10;
+    font-family: "GT Pressura Mono Light Light";
+}
+
+.right, .left{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fixed-menu{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: crimson;
+    z-index: 10;
+    top: -110%;
+    transition: all ease 0.5s;
+}
+
+.hero {
+    margin-top: 100px;
+     font-family: "Anton", sans-serif;
+    font-size: 11vw;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 100;
+   
+    text-align: center;
+
+    letter-spacing: -0.01em;
+
+}
+
+.hero-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursor-box {
+    position: fixed;
+    width: 300px;
+    height: 400px;
+    border-radius: 30px;
+    overflow: hidden;
+    pointer-events: none;
+        visibility: hidden;
+                   
+        transition:  left 0.2s ease, top 0.15s ease;;
+
+}
+
+.cursor-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+ 
+}
+.pointer{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: blue;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(-8deg);
+    transition: width 0.2s ease,
+                height 0.2s ease,
+                border-radius 0.2s ease,
+                left 0.2s ease, top 0.15s ease;    
+    pointer-events: none;
+    z-index: 999999;
+}
+
+.pointer.play-mode {
+    width: auto;
+    height: 45px;
+    border-radius: 10%;
+    margin-left: 3px;
+    margin-right: 3px;
+
+}
+.pointer span {
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-size: 30px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoshell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.videoshell video{
+    width: 90vw; height:95vh;
+
+}
+
+.play{
+     font-family: "Anton", sans-serif;
+    height: 450px;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 200px;
+}
+
+.outergrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 40px;
+}
+
+.blocks {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2%;
+}
+
+.block-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition:
+        filter 0.5s ease,
+        transform 0.5s ease;
+}
+
+.block-video {
+    position: absolute;
+
+    width: 70%;
+    height: 40%;
+    border-radius: 2%;
+    top: 50%;
+    left: 50%;
+
+
+    object-fit: cover;
+opacity: 0;
+    transform:
+        translate(-50%, -50%)
+        scale(0.9);
+
+    transition:
+        opacity .5s ease,
+        transform .5s ease;
+   
+}
+
+.blocks:hover .block-img {
+    filter: blur(8px);
+    transform: scale(0.94);
+}
+.blocks:hover .block-video{
+    opacity: 1;
+     transform:
+        translate(-50%, -50%)
+        scale(1);
+}
+
+.playtext {
+    display: inline-block;
+}
